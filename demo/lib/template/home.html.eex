@@ -1,0 +1,7 @@
+<%= header(@current) %>
+
+<button id="get-html" type="button" class="btn btn-primary">Get HTML</button>
+
+<button id="get-json" type="button" class="btn btn-primary">Get JSON</button>
+
+<div id="result"></div>

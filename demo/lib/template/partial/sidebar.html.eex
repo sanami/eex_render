@@ -1,0 +1,14 @@
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px;">
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a href="/" class="nav-link <%= if @current == :home, do: "active" %>" aria-current="page">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="/page" class="nav-link <%= if @current == :page, do: "active" %>">
+        Page
+      </a>
+    </li>
+  </ul>
+</div>

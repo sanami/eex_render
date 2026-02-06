@@ -4,7 +4,7 @@ defmodule EexRender.MixProject do
   def project do
     [
       app: :eex_render,
-      version: "0.1.1",
+      version: "0.1.2",
       elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       description: "A view engine for rendering EEx templates.",
@@ -16,6 +16,10 @@ defmodule EexRender.MixProject do
         files: ["lib", "mix.exs", "README.md", "LICENSE"],
         licenses: ["MIT"],
         links: %{"GitHub" => "https://github.com/sanami/eex_render"}
+      ],
+       docs: [
+        main: "readme",
+        extras: ["README.md"]
       ]
     ]
   end

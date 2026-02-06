@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= page_title(@assigns[:page_title]) %></title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/app.css" rel="stylesheet">
+  <script src="/app.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="d-flex flex-nowrap">
+      <%= render "partial/sidebar", current: @assigns[:current] %>
+
+      <main>
+        <%= @main_content %>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
