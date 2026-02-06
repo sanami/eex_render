@@ -1,0 +1,3 @@
+[partial]
+<%= helper("partial_helper") %>
+<%= if @assigns[:key2] do %><%= @key2 %><% end %>

@@ -1,0 +1,5 @@
+[page]
+<%= if @assigns[:key1] do %><%= @key1 %><% end %>
+<%= helper("page_helper") %>
+<%= render "partial" %>
+<%= render "partial", key2: "partial_assign" %>

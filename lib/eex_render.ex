@@ -46,6 +46,8 @@ defmodule EExRender do
         end)
 
         @spec render(binary() | atom(), keyword()) :: binary()
+        def render(template, assigns \\ [])
+
         def render(template, assigns) when is_binary(template), do: render(String.to_atom(template), assigns)
 
         def render(template, assigns) when is_atom(template) do
@@ -152,7 +154,7 @@ defmodule EExRender do
         html =
           if render_opts[:layout] do
             assigns = Map.put(assigns, :main_content, main_content)
-            apply(Template, unquote(opts[:layout]), [assigns])
+            apply(Template, render_opts[:layout], [assigns])
           else
             main_content
           end
