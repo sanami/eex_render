@@ -5,4 +5,4 @@ mix deps.get
 iex -S mix
 ```
 
-open http://localhost:4000/
+Open http://localhost:4000/
